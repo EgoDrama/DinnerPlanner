@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9}</ProjectGuid>
+    <ProjectGuid>{06B4D818-CE87-4DAE-A666-5D10F1F3D536}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DinnerPlanner.Domain</RootNamespace>
-    <AssemblyName>DinnerPlanner.Domain</AssemblyName>
+    <RootNamespace>DinnerPlanner.Web.Tests</RootNamespace>
+    <AssemblyName>DinnerPlanner.Web.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,21 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Commands\Command.cs" />
-    <Compile Include="Commands\ICommand.cs" />
-    <Compile Include="Commands\LogInCommand.cs" />
-    <Compile Include="Model\AggregateRoot.cs" />
-    <Compile Include="Model\Attendant.cs" />
-    <Compile Include="Model\DinnerParty.cs" />
-    <Compile Include="Model\Guest.cs" />
-    <Compile Include="Model\Host.cs" />
-    <Compile Include="Model\IAggregate.cs" />
-    <Compile Include="Model\IRole.cs" />
-    <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Events\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
