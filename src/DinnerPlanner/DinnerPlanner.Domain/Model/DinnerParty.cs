@@ -9,5 +9,6 @@ namespace DinnerPlanner.Domain.Model
         public DateTime Date { get; set; }
         public Dinner Dinner { get; set; }
         public Wine Wine { get; set; }
+        public Grade Grade { get; set; }
     }
 }

@@ -2,6 +2,6 @@
 {
     public class Attendant
     {
-        public IRole Role { get; set; } 
+        public string Name { get; set; }
     }
 }
