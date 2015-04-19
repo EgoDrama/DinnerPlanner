@@ -17,13 +17,14 @@ namespace DinnerPlanner.Domain.Tests.Handler
             // arrange
             var dinnerPartyRepository = new Mock<IRepository<DinnerParty>>();
             var dinnerPartyCommandHandler = new DinnerPartyCommandHandler(dinnerPartyRepository.Object);
-            var createDinnerPartyCommand = new CreateDinnerPartyCommand(Guid.Empty, -1);
+            var dinnerParty = new DinnerParty();
+            var createDinnerPartyCommand = new CreateDinnerPartyCommand(Guid.Empty, -1, dinnerParty);
 
             // act
             dinnerPartyCommandHandler.Execute(createDinnerPartyCommand);
 
             //assert
-            dinnerPartyRepository.Verify(x => x.Save(It.IsAny<IAggregate>(), It.IsAny<int>()), Times.Once);
+            dinnerPartyRepository.Verify(x => x.Save(It.IsAny<DinnerParty>(), It.IsAny<int>()), Times.Once);
         }
     }
 }

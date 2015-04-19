@@ -21,7 +21,11 @@ namespace DinnerPlanner.Domain.Handler
             var dinnerParty = new DinnerParty
             {
                 AggregateRootId = Guid.NewGuid(),
-                Version = -1
+                Version = -1,
+                Attendants = command.Attendatns,
+                Date = command.Date,
+                Dinner = command.Dinner,
+                Wine = command.Wine
             };
 
             _repository.Save(dinnerParty, dinnerParty.Version);
