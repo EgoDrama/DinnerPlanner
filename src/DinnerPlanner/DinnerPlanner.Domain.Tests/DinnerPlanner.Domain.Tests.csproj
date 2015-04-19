@@ -57,6 +57,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DinnerPlanner.Domain\DinnerPlanner.Domain.csproj">
+      <Project>{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9}</Project>
+      <Name>DinnerPlanner.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

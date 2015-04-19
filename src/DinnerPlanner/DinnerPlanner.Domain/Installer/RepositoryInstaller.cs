@@ -2,7 +2,6 @@
 using Castle.MicroKernel.Registration;
 using Castle.MicroKernel.SubSystems.Configuration;
 using Castle.Windsor;
-using DinnerPlanner.Domain.Repository;
 using Raven.Client;
 using Raven.Client.Document;
 
