@@ -30,7 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>..\packages\Castle.Windsor.3.3.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.3.0.3660\lib\net45\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.3.0.3660\lib\net45\Raven.Client.Lightweight.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,22 +52,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Commands\Command.cs" />
-    <Compile Include="Commands\ICommand.cs" />
-    <Compile Include="Commands\LogInCommand.cs" />
+    <Compile Include="Command\Command.cs" />
+    <Compile Include="Command\CreateDinnerPartyCommand.cs" />
+    <Compile Include="Handler\CommandDispatcher.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Handler\DinnerPartyCommandHandler.cs" />
+    <Compile Include="Handler\LogInCommandHandler.cs" />
+    <Compile Include="Handler\ICommandDispatcher.cs" />
+    <Compile Include="Command\LogInCommand.cs" />
+    <Compile Include="Handler\ICommandHandler.cs" />
+    <Compile Include="Installer\RepositoryInstaller.cs" />
     <Compile Include="Model\AggregateRoot.cs" />
     <Compile Include="Model\Attendant.cs" />
+    <Compile Include="Model\Dinner.cs" />
     <Compile Include="Model\DinnerParty.cs" />
     <Compile Include="Model\Guest.cs" />
     <Compile Include="Model\Host.cs" />
     <Compile Include="Model\IAggregate.cs" />
     <Compile Include="Model\IRole.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Model\Wine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DinnerPartyRepository.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="Security\ILoginManager.cs" />
+    <Compile Include="Security\LoginManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Events\" />
+    <Folder Include="Event\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

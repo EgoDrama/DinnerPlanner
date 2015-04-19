@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DinnerPlanner.Domain.Commands
+namespace DinnerPlanner.Domain.Command
 {
     public abstract class Command : ICommand
     {
