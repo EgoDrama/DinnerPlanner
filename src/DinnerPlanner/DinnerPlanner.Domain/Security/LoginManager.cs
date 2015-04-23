@@ -1,13 +1,13 @@
-﻿using DinnerPlanner.Domain.Model;
-using DinnerPlanner.Domain.Repository;
+﻿using Common.Repository;
+using DinnerPlanner.Domain.Domain.Model;
 
 namespace DinnerPlanner.Domain.Security
 {
     public class LoginManager: ILoginManager
     {
-        private readonly IRepository<User> _useRepository;
+        private readonly IRepository<User, IAggregate> _useRepository;
 
-        public LoginManager(IRepository<User> useRepository)
+        public LoginManager(IRepository<User, IAggregate> useRepository)
         {
             _useRepository = useRepository;
         }

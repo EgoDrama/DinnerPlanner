@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DinnerPlanner.Domain.Model
+namespace DinnerPlanner.Domain.Domain.Model
 {
     public interface IAggregate
     {

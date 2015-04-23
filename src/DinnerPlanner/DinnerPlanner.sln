@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Domain", "DinnerPlanner.Domain\DinnerPlanner.Domain.csproj", "{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner", "DinnerPlanner.Domain\DinnerPlanner.csproj", "{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Domain.Tests", "DinnerPlanner.Domain.Tests\DinnerPlanner.Domain.Tests.csproj", "{68D5EB6A-F9F2-429D-AB81-440DA7C8FC72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Tests", "DinnerPlanner.Domain.Tests\DinnerPlanner.Tests.csproj", "{68D5EB6A-F9F2-429D-AB81-440DA7C8FC72}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Web.Api", "DinnerPlanner.Web.Api\DinnerPlanner.Web.Api.csproj", "{AF70FD6F-6592-4F36-A28E-60A8A4F0802C}"
 EndProject
@@ -14,6 +14,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Web", "DinnerPlanner.Web\DinnerPlanner.Web.csproj", "{9CE0B157-E8D6-4415-802A-78D515D0A0A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DinnerPlanner.Web.Tests", "DinnerPlanner.Web.Tests\DinnerPlanner.Web.Tests.csproj", "{06B4D818-CE87-4DAE-A666-5D10F1F3D536}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DinnerPlannerContext", "DinnerPlannerContext", "{9715B515-289F-4D94-A4ED-2D7171B9A215}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{EEA37F7C-52C0-463B-B8AC-AC02E8A364CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,8 +51,17 @@ Global
 		{06B4D818-CE87-4DAE-A666-5D10F1F3D536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06B4D818-CE87-4DAE-A666-5D10F1F3D536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06B4D818-CE87-4DAE-A666-5D10F1F3D536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9} = {9715B515-289F-4D94-A4ED-2D7171B9A215}
+		{68D5EB6A-F9F2-429D-AB81-440DA7C8FC72} = {9715B515-289F-4D94-A4ED-2D7171B9A215}
+		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F} = {EEA37F7C-52C0-463B-B8AC-AC02E8A364CA}
 	EndGlobalSection
 EndGlobal

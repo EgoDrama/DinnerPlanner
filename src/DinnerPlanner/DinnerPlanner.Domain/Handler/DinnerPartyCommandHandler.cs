@@ -1,15 +1,15 @@
 ﻿using System;
-using DinnerPlanner.Domain.Command;
-using DinnerPlanner.Domain.Model;
-using DinnerPlanner.Domain.Repository;
+using Common.Repository;
+using DinnerPlanner.Domain.Application.Command;
+using DinnerPlanner.Domain.Domain.Model;
 
 namespace DinnerPlanner.Domain.Handler
 {
     public class DinnerPartyCommandHandler : ICommandHandler<CreateDinnerPartyCommand>
     {
-        private readonly IRepository<DinnerParty> _repository;
+        private readonly IRepository<DinnerParty, IAggregate> _repository;
 
-        public DinnerPartyCommandHandler(IRepository<DinnerParty> repository)
+        public DinnerPartyCommandHandler(IRepository<DinnerParty, IAggregate> repository)
         {
             _repository = repository;
         }

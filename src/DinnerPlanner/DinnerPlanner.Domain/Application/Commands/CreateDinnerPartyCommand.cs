@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using DinnerPlanner.Domain.Model;
+using DinnerPlanner.Domain.Domain.Model;
 
-namespace DinnerPlanner.Domain.Command
+namespace DinnerPlanner.Domain.Application.Command
 {
     public class CreateDinnerPartyCommand : Command
     {

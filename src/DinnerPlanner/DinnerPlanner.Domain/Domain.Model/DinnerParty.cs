@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DinnerPlanner.Domain.Model
+namespace DinnerPlanner.Domain.Domain.Model
 {
     public class DinnerParty : AggregateRoot
     {
