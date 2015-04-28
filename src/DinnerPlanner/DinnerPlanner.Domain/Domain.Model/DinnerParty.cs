@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Common.Domain.Model;
 
 namespace DinnerPlanner.Domain.Domain.Model
 {

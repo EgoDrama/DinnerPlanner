@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using DinnerPlanner.Domain.Domain.Model;
 
-namespace DinnerPlanner.Domain.Application.Command
+namespace DinnerPlanner.Domain.Application.Commands
 {
     public class CreateDinnerPartyCommand : Command
     {
@@ -11,12 +11,12 @@ namespace DinnerPlanner.Domain.Application.Command
         public Dinner Dinner { get; set; }
         public Wine Wine { get; set; }
 
-        public CreateDinnerPartyCommand(Guid id, int version, DinnerParty dinnerParty) : base(id, version)
+        public CreateDinnerPartyCommand(Guid id, int version, DateTime date, IEnumerable<Attendant> attendants, Dinner dinner, Wine wine) : base(id, version)
         {
-            Date = dinnerParty.Date;
-            Attendatns = dinnerParty.Attendants;
-            Dinner = dinnerParty.Dinner;
-            Wine = dinnerParty.Wine;
+            Date = date;
+            Attendatns = attendants;
+            Dinner = dinner;
+            Wine = wine;
         }
     }
 }

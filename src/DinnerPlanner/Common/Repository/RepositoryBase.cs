@@ -1,17 +1,17 @@
 ﻿using System;
+using Common.Domain.Model;
 
 namespace Common.Repository
 {
-    public class RepositoryBase<TEntity, TAggregate> : IRepository<TEntity, TAggregate> 
+    public class RepositoryBase<TEntity> : IRepository<TEntity> 
         where TEntity: class
-        where TAggregate : class
     {
         public TEntity Get(Guid aggregateRootId)
         {
             throw new NotImplementedException();
         }
 
-        public void Save(TAggregate aggregate, int version)
+        public void Save(IAggregate aggregate, int version)
         {
             throw new NotImplementedException();
         }

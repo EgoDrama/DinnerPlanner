@@ -1,4 +1,4 @@
-﻿namespace DinnerPlanner.Domain.Security
+﻿namespace IdentityAccess.Security
 {
     public interface ILoginManager
     {

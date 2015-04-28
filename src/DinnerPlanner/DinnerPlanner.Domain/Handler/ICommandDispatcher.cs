@@ -1,4 +1,4 @@
-﻿using DinnerPlanner.Domain.Application.Command;
+﻿using DinnerPlanner.Domain.Application.Commands;
 
 namespace DinnerPlanner.Domain.Handler
 {

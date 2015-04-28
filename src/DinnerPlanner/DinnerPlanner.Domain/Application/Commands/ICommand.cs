@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DinnerPlanner.Domain.Application.Command
+namespace DinnerPlanner.Domain.Application.Commands
 {
     public interface ICommand
     {

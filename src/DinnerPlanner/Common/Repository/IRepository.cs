@@ -1,12 +1,12 @@
 ﻿using System;
+using Common.Domain.Model;
 
 namespace Common.Repository
 {
-    public interface IRepository<TEntity, TAggregate> 
+    public interface IRepository<TEntity> 
         where TEntity : class 
-        where TAggregate : class
     {
         TEntity Get(Guid aggregateRootId);
-        void Save(TAggregate aggregate, int version);
+        void Save(IAggregate aggregate, int version);
     }
 }

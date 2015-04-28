@@ -1,4 +1,6 @@
-﻿namespace DinnerPlanner.Domain.Domain.Model
+﻿using Common.Domain.Model;
+
+namespace DinnerPlanner.Domain.Domain.Model
 {
     public class User : AggregateRoot
     {

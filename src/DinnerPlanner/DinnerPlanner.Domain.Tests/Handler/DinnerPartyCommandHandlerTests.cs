@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Common.Repository;
-using DinnerPlanner.Domain.Application.Command;
+using DinnerPlanner.Domain.Application.Commands;
 using DinnerPlanner.Domain.Domain.Model;
 using DinnerPlanner.Domain.Handler;
 using Moq;
@@ -15,10 +16,14 @@ namespace DinnerPlanner.Domain.Tests.Handler
         public void Aggreagate_is_saved_when_command_is_received()
         {
             // arrange
-            var dinnerPartyRepository = new Mock<IRepository<DinnerParty, IAggregate>>();
+            var dinnerPartyRepository = new Mock<IRepository<DinnerParty>>();
             var dinnerPartyCommandHandler = new DinnerPartyCommandHandler(dinnerPartyRepository.Object);
-            var dinnerParty = new DinnerParty();
-            var createDinnerPartyCommand = new CreateDinnerPartyCommand(Guid.Empty, -1, dinnerParty);
+            
+            var date = DateTime.Now;
+            var attendants = new List<Attendant>();
+            var dinner = new Dinner();
+            var wine = new Wine();
+            var createDinnerPartyCommand = new CreateDinnerPartyCommand(Guid.Empty, -1, date, attendants, dinner, wine);
 
             // act
             dinnerPartyCommandHandler.Execute(createDinnerPartyCommand);

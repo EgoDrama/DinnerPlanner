@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DinnerPlanner.Domain.Domain.Model
+namespace Common.Domain.Model
 {
     public abstract class AggregateRoot : IAggregate
     {

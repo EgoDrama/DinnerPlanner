@@ -21,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{EEA37F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityAccessContext", "IdentityAccessContext", "{D328E2BD-8120-435F-9C2C-9C437FA15710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityAccess", "IdentityAccess\IdentityAccess.csproj", "{CA93352F-A05F-4F66-8B3F-B64977854722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,10 @@ Global
 		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA93352F-A05F-4F66-8B3F-B64977854722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA93352F-A05F-4F66-8B3F-B64977854722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA93352F-A05F-4F66-8B3F-B64977854722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA93352F-A05F-4F66-8B3F-B64977854722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,5 +71,6 @@ Global
 		{9BDDA957-E0A1-4D43-A7DE-06567DAFF9F9} = {9715B515-289F-4D94-A4ED-2D7171B9A215}
 		{68D5EB6A-F9F2-429D-AB81-440DA7C8FC72} = {9715B515-289F-4D94-A4ED-2D7171B9A215}
 		{D87BDCBC-29FF-44CA-8998-200D3FEC3A2F} = {EEA37F7C-52C0-463B-B8AC-AC02E8A364CA}
+		{CA93352F-A05F-4F66-8B3F-B64977854722} = {D328E2BD-8120-435F-9C2C-9C437FA15710}
 	EndGlobalSection
 EndGlobal
